@@ -1,0 +1,33 @@
+﻿<div class="jumbotron">
+    <h1>ASP.NET REST API Test Screen</h1>
+    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS, and JavaScript.</p>
+    <p><a href="http://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+</div>
+<div class="row">
+    <table>
+        <tr>
+            <td><button onclick="GetAllProducts();return false;">Get All Products</button></td>
+            <td>Enter Employee Id: <input type="text" id="txtProdId" style="width:50PX" /></td>
+            <td><button onclick="GetProduct(); return false;">Get Product</button></td>
+            <td>
+                <table>
+                    <tr><td>ID:</td><td><input type="text" id="txtProdId2" /></td></tr>
+                    <tr> <td>Name:</td><td><input type="text" id="txtName" /></td></tr>
+                    <tr> <td>Category:</td><td><input type="text" id="txtCategory" /></td></tr>
+                    <tr><td>Price:</td><td><input type="text" id="txtPrice" /></td></tr>
+                </table>
+            </td>
+            <td><button onclick="AddProduct(); return false;">Add Product</button></td>
+            <td>Delete Product <input type="text" id="txtdelProdId" style="width:50PX" /></td>
+            <td><button onclick="DeleteProduct(); return false;">Delete Product</button></td>
+        </tr>
+    </table>
+    <h3>Oputput of action done through WEB API:</h3>
+   
+    <div id="loading">
+        <p><img src="~/Content/loading.gif" /> Please Wait</p>
+    </div>
+            <div id="divResult"></div>
+        
+   
+</div>
